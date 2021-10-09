@@ -42,8 +42,8 @@ function Sidebar() {
           <IconButton>
             <DonutLargeIcon />
           </IconButton>
-          <IconButton>
-            <ChatIcon onClick={createChat} />
+          <IconButton onClick={createChat}>
+            <ChatIcon />
           </IconButton>
           <IconButton>
             <MoreVertIcon />

@@ -40,7 +40,6 @@ function Chat() {
 
   const sendMessage = (e) => {
     e.preventDefault();
-    console.log("You typed >>> ", input);
 
     db.collection("rooms").doc(roomId).collection("messages").add({
       message: input,
@@ -50,8 +49,6 @@ function Chat() {
 
     setInput("");
   };
-
-  console.log("room", roomId);
 
   return (
     <div className="chat">
